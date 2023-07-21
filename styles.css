@@ -50,3 +50,6 @@
     }
   }
 
+  .dropdown-block:hover .dropdown-container{
+    display: block !important;
+}
