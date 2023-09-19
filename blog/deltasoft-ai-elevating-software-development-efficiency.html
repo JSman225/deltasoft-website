@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Deltasoft" property="og:title">
+    <meta content="© Deltasoft 2023" property="og:site_name">
+    <meta name="description" content="Discover the future with Deltasoft, the leading AI and Software platform built for endless possibilities. Explore our powerful tools, advanced algorithms, and cutting-edge technology to unlock new horizons. Join us on a journey of innovation, collaboration, and limitless potential. Together, let's shape the world of tomorrow.">
+    <meta content="Discover the future with Deltasoft, the leading AI and Software platform built for endless possibilities." property="og:description">
+    <meta content='https://deltasoft-ai.netlify.app/apple-touch-icon.png' property='og:image'>
+    <meta name="keywords" content="Deltasoft AI, Deltasoft Ai, Deltasoft, AI, Ai, Deltasoft-AI, Deltasoft-Ai, deltasoft, deltasoft ai, deltasoft-ai, ai">
+    <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#202020">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link href="/tailwind/output.css" rel="stylesheet">
+    <title>Blog: Empowering Developers, One Article at a Time | Deltasoft</title>
+</head>
+<body class="dark:bg-neutral-900">
+    <div>
+      <header class="relative z-50">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">Deltasoft</span>
+              <img class="h-8 w-auto" src="https://i.ibb.co/BBWm0p3/Frame-1.png" alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button onclick="toggleMenuVisibility()" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-white">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="lg:flex hidden items-center lg:gap-x-12">
+            <div class="relative dropdown-block">
+              <button type="button" class="flex items-center h-10 gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-white" aria-expanded="false">
+                Product
+                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+      
+              <!--
+                'Product' flyout menu, show/hide based on flyout menu state.
+      
+                Entering: "transition ease-out duration-200"
+                  From: "opacity-0 translate-y-1"
+                  To: "opacity-100 translate-y-0"
+                Leaving: "transition ease-in duration-150"
+                  From: "opacity-100 translate-y-0"
+                  To: "opacity-0 translate-y-1"
+              -->
+              <div class="dropdown-container hidden absolute -left-8 top-7 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                <div class="p-4">
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <svg class="h-6 w-6 text-gray-600 group-hover:text-blue-700" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Analytics
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
+                    </div>
+                  </div>
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <svg class="h-6 w-6 text-gray-600 group-hover:text-blue-700" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Engagement
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">Speak directly to your customers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Blog</a>
+            <a href="/company" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Company</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Join Us</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            
+          </div>
+        </nav>
+        <script>
+          function toggleMenuVisibility(){
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+          }
+        </script>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div id="mobileMenu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-10"></div>
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">Deltasoft</span>
+                <img class="h-8 w-auto" src="https://i.ibb.co/BBWm0p3/Frame-1.png" alt="">
+              </a>
+              <button onclick="toggleMenuVisibility()" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <div class="-mx-3">
+                    <script>
+                      function toggleMenu(){
+                        document.getElementById("menuIcon").classList.toggle("rotate-180");
+                        document.getElementById("menu").classList.toggle("hidden");
+                      }
+                    </script>
+                    <button onclick="toggleMenu()" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                      Product
+                      <!--
+                        Expand/collapse icon, toggle classes based on menu open state.
+      
+                        Open: "rotate-180", Closed: ""
+                      -->
+                      <svg id="menuIcon" class="rotate-180 h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                    <div id="menu" class="hidden mt-2 space-y-2" id="disclosure-1">
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
+                    </div>
+                  </div>
+                  <a href="/blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</a>
+                  <a href="/company" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Join Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+          <div class="relative isolate ">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+              <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#2563eb] to-[#2563eb] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+          </div>
+
+</div>
+
+
+
+
+
+    <article>
+        <div class="m-auto w-full max-w-[1350px] px-8">
+            <div class="mb-12 mt-12 flex flex-col items-center justify-center gap-x-4 md:mb-24 xl:flex-row xl:items-start">
+                <div class="relative w-full xl:w-2/3">
+                    <div class="relative mx-auto overflow-hidden rounded-lg md:w-2/3 xl:w-full shadow-2xl"><img src="https://i.ibb.co/2NT6JHd/image-12.png" alt="shopify online shopping popups" class="w-full">
+                        <div class="absolute bottom-5 left-5 flex gap-x-2 rounded-2xl bg-white px-3 py-1 font-biennale text-4xs leading-snug text-navy-900 sm:gap-x-4 sm:text-3xs md:gap-x-5 md:px-6 md:py-3 md:text-mini xl:bottom-16 xl:left-16"><img class="h-[5px] w-[5px] self-center sm:h-3 sm:w-3" src="https://www.personizely.net/_nuxt/time.b8409b46.svg" alt=""><span>July 20, 2023</span></div>
+                    </div>
+                    <div class="mt-16 md:px-28">
+                        <div class="post-text">
+                            <div class="flex gap-5">
+                                <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">
+                                    Deltasoft AI
+                                </a>
+                                <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">
+                                Developers
+                                </a>
+                            </div>
+                            <h1 id="Introduction" class="text-[2.75rem] leading-[3.575rem] mb-[2rem] mt-[1.25rem]">
+                                Deltasoft AI: Elevating Software Development Efficiency
+                            </h1>
+                            <p class="text-base leading-[1.75rem]">
+                                In the ever-evolving world of software development, the year 2023 promises exciting advancements that will empower developers and shape the future of programming. From cutting-edge technologies to transformative trends, this article explores the key elements that will play a significant role in revolutionizing the way developers work and create software solutions.
+                            </p>
+                            <h2 id="1" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]" id="title403">
+                                1. AI-Powered Code Assistants
+                            </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    One of the most impactful advancements in software development in recent years has been the rise of AI-powered code assistants. These intelligent tools, equipped with machine learning capabilities, have gained immense popularity among developers. A prominent example of such a code assistant is Microsoft's IntelliCode, which is integrated into Visual Studio Code. IntelliCode uses AI to analyze code patterns from millions of repositories on GitHub, providing context-aware code suggestions and predicting the next line of code in real-time. Developers benefit from increased productivity, reduced code errors, and faster development cycles thanks to these AI-driven code assistants.
+                                </p>
+                                <p class="text-base leading-[1.75rem]">
+                                    <img class="my-8 rounded-2xl shadow-2xl" src="https://visualstudio.microsoft.com/wp-content/uploads/2023/01/intellicode-autocomplition.gif" alt="intellicode-autocomplition">
+                                </p>
+                                <h2 id="2" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]">
+                                    2. Low-Code and No-Code Platforms
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    The low-code and no-code movement has been gaining significant momentum, transforming how applications are developed. These platforms provide developers with the tools to build functional applications with minimal coding effort, accelerating the development process significantly. One notable example is Mendix, a low-code platform that allows developers to visually create applications using a drag-and-drop interface. Developers can focus on creativity and user experience, while the platform handles the backend complexities, making software development more accessible to a wider audience.
+                                </p>
+                                <h2 id="3" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]" id="title404">
+                                    3. Serverless Computing
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    In 2022, serverless computing is revolutionizing cloud development. Services like AWS Lambda and Azure Functions have enabled developers to deploy code without managing servers directly. This approach ensures optimal scalability and cost-effectiveness, as resources are allocated dynamically based on demand. A classic example of serverless computing in action is the serverless architecture of a social media platform. Instead of provisioning and managing servers to handle varying loads, serverless functions can be triggered to handle specific tasks, allowing for efficient resource utilization and seamless scaling.
+                                </p>
+                                <h2 id="4" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]">
+                                    4. Integrated Development Environments (IDEs)
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    Modern IDEs have evolved to become powerful and customizable hubs for developers. Visual Studio Code, developed by Microsoft, is a prime example of an IDE that has gained tremendous popularity among developers. It offers an extensive range of extensions, enabling developers to tailor their coding environment to their specific needs. With features like code autocompletion, version control integration, and seamless collaboration tools, IDEs have become essential tools in the developer's arsenal, facilitating efficient and enjoyable coding experiences.
+                                </p>
+                                <p class="text-base leading-[1.75rem]">
+                                    <img class="my-8 rounded-2xl shadow-2xl" src="https://code.visualstudio.com/assets/updates/1_37/icons.gif" alt="Visual studio gif">
+                                </p>
+                                <h2 id="5" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]" id="title405">
+                                    5. Collaboration and Project Management Tools
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    Effective communication and project management are crucial for successful development projects. Collaboration tools like Slack and Microsoft Teams have become integral to developer workflows, allowing team members to communicate seamlessly, share ideas, and seek timely feedback. Additionally, project management tools like Asana aid in organizing tasks, tracking progress, and ensuring that development projects stay on schedule. These tools foster a collaborative and efficient work environment, enabling teams to deliver high-quality software products.
+                                </p>
+                                <p class="text-base leading-[1.75rem]">
+                                    <img class="my-8 rounded-2xl shadow-2xl" src="https://capacity.com/wp-content/uploads/2020/06/slack-vs-teams-02-1536x970.png.webp" alt="shopify cross sell popup">
+                                </p>
+                                <h2 id="6" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]">
+                                    6. Continuous Integration and Continuous Deployment (CI/CD)
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    In 2023, CI/CD practices have become a standard in modern software development. Continuous Integration (CI) and Continuous Deployment (CD) workflows are automated processes that enable developers to build, test, and deploy code changes systematically. Tools like Jenkins and GitLab CI/CD have streamlined these processes, leading to faster delivery and increased software quality. As a result, developers can focus more on writing code and less on managing the development pipeline, resulting in improved productivity and code reliability.
+                                </p>
+                                <h2 id="7" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]" id="title406">
+                                    7. Containerization Technologies
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    Containerization technologies like Docker and Kubernetes have been transforming the way applications are deployed and managed. Docker allows developers to package applications and their dependencies into containers, ensuring consistency across different environments. Kubernetes, an open-source container orchestration platform, simplifies the deployment and scaling of containerized applications. These technologies have led to more efficient and scalable development and deployment processes, making it easier for developers to manage complex applications.
+                                </p>
+                                <p>
+                                    <img class="my-8 rounded-2xl shadow-2xl" src="https://www.cloudzero.com/hubfs/blog/docker-alternatives.jpg" alt="shopify promotional popup">
+                                </p>
+                                <h2 id="Conclusion" class="text-[2rem] leading-[2.5rem] mb-[1rem] mt-[2rem]" id="title408">
+                                    Conclusion
+                                </h2>
+                                <p class="text-base leading-[1.75rem]">
+                                    As the software development landscape continues to evolve, developers in 2022 will witness remarkable technological advancements. From AI-powered code assistants to low-code platforms and serverless computing, these innovations empower developers to work more efficiently, foster creativity, and deliver cutting-edge solutions. Embracing these key technologies and trends will undoubtedly shape the future of software development and open doors to even greater possibilities. With the continuous evolution of tools and practices like <span class="font-semibold leading-6 text-indigo-600">Deltasoft AI</span>, developers will have access to even more powerful and accessible resources, further transforming the world of programming. As we move forward, developers must stay attuned to these trends, leveraging technology to its fullest potential and driving innovation across all industries. The future of software development is bright, and developers are at the forefront of this exciting journey.
+                                </p>
+                        </div>
+                        <div class="mt-12 flex justify-center rounded-xl border border-gray-200 md:justify-start">
+                            <div class="my-6 flex flex-col items-center justify-center gap-x-5 text-center md:my-9 md:mx-12 md:flex-row md:items-start md:text-left"><img src="/assets/JSmanLogo.png" alt="Polina Slepac" class="h-16 w-16 rounded-full" loading="lazy">
+                                <div class="flex flex-col">
+                                    <p class="mt-3 mb-1 font-biennale text-lg font-bold leading-6 md:mt-0 md:mb-0">JSman225</p>
+                                    <p class="mb-6 w-[200px] font-biennale text-tiny leading-8 text-gray-700 md:mb-0 md:w-full">Founder of <span class="font-semibold leading-6 text-indigo-600">Deltasoft</span></p>
+                                    <p class="font-biennale text-xs text-gray-500 md:text-tiny"><span class="font-biennale text-xs text-gray-500 md:text-tiny">July 20, 2023</span><span class="ml-5 font-biennale text-xs text-gray-500 md:text-tiny">6:00 PM</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 flex flex-col gap-3 lg:flex-row xl:md:w-1/3 xl:mt-0 xl:flex-col xl:gap-x-0 z-10">
+                    <div data-ply-placeholder="3" class="empty:hidden"></div>
+                    <div class="flex rounded-xl border border-gray-200 shadow-2xl" header="">
+                        <div class="mt-9 flex flex-col px-10 pb-10">
+                            <h2 class="text-4xl">Content</h2>
+                            <ul class="mt-6 list-none">
+                                <li>
+                                    <a href="#Introduction" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>Introduction</a>
+                                </li>
+                                <li class="flex flex-col">
+                                    <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                    <a href="#1" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>1. AI-Powered Code Assistants</a>
+                                </li>
+                                <li class="flex flex-col">
+                                    <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                    <a href="#2" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>2. Low-Code and No-Code Platforms</a>
+                                </li>
+                                <li class="flex flex-col">
+                                    <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                    <a href="#3" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>3. Serverless Computing</a>
+                                </li>
+                                <li class="flex flex-col">
+                                    <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                    <a href="#4" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>4. Integrated Development Environments (IDEs)</a>
+                                </li>
+                                <li class="flex flex-col">
+                                    <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                    <a href="#5" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>5. Collaboration and Project Management Tools</a>
+                                </li>
+                                <li class="flex flex-col">
+                                  <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                  <a href="#6" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                      <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                          <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                      </div>6. Continuous Integration and Continuous Deployment (CI/CD)</a>
+                              </li>
+                              <li class="flex flex-col">
+                                <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                <a href="#7" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                    <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                        <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                    </div>7. Containerization Technologies</a>
+                            </li>
+                                <li class="flex flex-col">
+                                    <div class="relative py-4 after:absolute after:top-1/2 after:left-10 after:right-0 after:h-px after:bg-gray-200"></div>
+                                    <a href="#Conclusion" class="flex cursor-pointer gap-x-5 font-semibold text-lg text-gray-700 hover:text-blue">
+                                        <div class="my-auto flex flex h-5 w-5 min-w-[1.25rem] items-center justify-center rounded-2xl bg-blue-100">
+                                            <div class="h-1 w-1 rounded-lg bg-blue-600"></div>
+                                        </div>Conclusion</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+
+    <div class="bg-white pb-24">
+      <div class="mx-auto max-w-5xl px-6 lg:px-0">
+        <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <article class="flex max-w-xl flex-col items-start justify-between">
+          <img class="shadow-xl rounded-xl object-cover w-full h-46" src="https://images.unsplash.com/photo-1525824617522-ca036119a052?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+          <br>  
+          <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+              <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">Deltasoft AI</a>
+              <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">Developers</a>
+            </div>
+            <div class="group relative">
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Deltasoft AI: Elevating Software Development Efficiency
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Discover how Deltasoft AI streamlines the software development process. From automated code reviews to intelligent bug detection, see how this AI-powered tool enhances efficiency and productivity for programmers.</p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img src="/assets/JSmanLogo.png" alt="" class="h-10 w-10 rounded-full bg-gray-50 shadow-2xl">
+              <div class="text-sm leading-5">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    JSman225
+                  </a>
+                </p>
+                <p class="text-gray-600">Founder</p>
+              </div>
+            </div>
+          </article>
+          <article class="flex max-w-xl flex-col items-start justify-between">
+              <img class="shadow-xl rounded-xl object-cover w-full h-46" src="https://images.unsplash.com/photo-1525824617522-ca036119a052?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+              <br>  
+              <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                  <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">AI</a>
+                  <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">Programming</a>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      The Future of Programming: Embracing AI Assistants
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Step into the era of AI-powered programming assistants. Explore the benefits of using AI to assist programmers in tasks like code generation, debugging, and code completion, revolutionizing the way we write code.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img src="/assets/JSmanLogo.png" alt="" class="h-10 w-10 rounded-full bg-gray-50 shadow-2xl">
+                  <div class="text-sm leading-5">
+                    <p class="font-semibold text-gray-900">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        JSman225
+                      </a>
+                    </p>
+                    <p class="text-gray-600">Founder</p>
+                  </div>
+                </div>
+              </article>
+              <article class="flex max-w-xl flex-col items-start justify-between">
+                  <img class="shadow-xl rounded-xl object-cover w-full h-46" src="https://images.unsplash.com/photo-1525824617522-ca036119a052?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+                  <br>  
+                  <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                      <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">Developers</a>
+                      <a href="#" class="relative z-10 rounded-full bg-blue-600 hover:bg-blue-700 px-3 py-1.5 font-medium text-gray-100">Cybersecurity</a>
+                    </div>
+                    <div class="group relative">
+                      <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Cybersecurity for Developers: Best Practices and Tools
+                        </a>
+                      </h3>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">A comprehensive guide to cybersecurity essentials for developers. Learn about secure coding practices, essential security tools, and how to integrate security measures into the software development lifecycle.</p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img src="/assets/JSmanLogo.png" alt="" class="h-10 w-10 rounded-full bg-gray-50 shadow-2xl">
+                      <div class="text-sm leading-5">
+                        <p class="font-semibold text-gray-900">
+                          <a href="#">
+                            <span class="absolute inset-0"></span>
+                            JSman225
+                          </a>
+                        </p>
+                        <p class="text-gray-600">Founder</p>
+                      </div>
+                    </div>
+                  </article>
+        </div>
+      </div>
+    </div>
+  
+
+
+<style>
+    *:focus {
+    outline: none;
+}
+
+</style>
+
+<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="max-w-xl lg:max-w-lg">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">Empowering Developers, Inspiring Solutions</h2>
+          <p class="mt-4 text-lg leading-8 text-gray-300">From imagination to realization, our tools and support empower developers to create wonders.</p>
+          <div class="mt-6 flex max-w-md gap-x-4 text-white">
+            <i class="cursor-pointer fa-brands fa-github fa-2x"></i><i class="cursor-pointer fa-brands fa-youtube fa-2x"></i><i class="cursor-pointer fa-brands fa-discord fa-2x"></i>
+          </div>
+        </div>
+        <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+          <div class="flex flex-col items-start">
+            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+              </svg>
+            </div>
+            <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+            <dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+          </div>
+          <div class="flex flex-col items-start">
+            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+              </svg>
+            </div>
+            <dt class="mt-4 font-semibold text-white">No spam</dt>
+            <dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#2563eb] to-[#2563eb] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+   
+  </div>
+
+</body>
+</html>
