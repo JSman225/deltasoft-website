@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://deltasoftai.com/</loc>
+	<lastmod>2023-10-11T03:57:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://deltasoftai.com/company</loc>
+	<lastmod>2023-10-11T03:57:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://deltasoftai.com/blog/</loc>
+	<lastmod>2023-10-11T03:57:14+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://deltasoftai.com/blog/empowering-developers-in-2023-key-technologies-and-trends</loc>
+	<lastmod>2023-10-11T03:57:14+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://deltasoftai.com/blog/deltasoft-ai-elevating-software-development-efficiency</loc>
+	<lastmod>2023-10-11T03:57:14+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
