@@ -1468,16 +1468,12 @@ video {
   list-style-position: outside;
 }
 
-.list-decimal {
-  list-style-type: decimal;
+.list-disc {
+  list-style-type: disc;
 }
 
 .list-none {
   list-style-type: none;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .appearance-none {
@@ -2676,6 +2672,10 @@ video {
   padding-left: 1.5rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -2704,26 +2704,6 @@ video {
   padding-top: 1rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2746,10 +2726,6 @@ video {
 
 .text-end {
   text-align: end;
-}
-
-.indent-8 {
-  text-indent: 2rem;
 }
 
 .align-baseline {
@@ -3462,6 +3438,8 @@ video {
           mask-image: radial-gradient(closest-side,white,transparent);
 }
 
+/* npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css --watch */
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3689,6 +3667,10 @@ video {
 
   .sm\:h-3 {
     height: 0.75rem;
+  }
+
+  .sm\:h-80 {
+    height: 20rem;
   }
 
   .sm\:w-3 {
